@@ -1,0 +1,61 @@
+/*******************************************/
+/*DIO Driver
+Target: ATMEGA32
+Author :FADY
+ Date:2023-01-18*/
+/*******************************************/
+#ifndef _DIO_CFG_H
+#define _DIO_CFG_H
+
+#define DIO_DIR_OUTPUT   1
+#define DIO_DIR_INPUT    0
+
+#define DIO_INPUT_PULL_UP   0
+#define DIO_INPUT_PULL_DOWN 1
+
+typedef struct{
+    u8 DIO_PinDirection;
+    u8 DIO_InputStatus;
+}DIO_tstrPinCfg;
+
+const DIO_tstrPinCfg DIO_strPinCfg[32]={
+    {DIO_DIR_OUTPUT, DIO_INPUT_PULL_DOWN},  /* PIN 0 */
+    {DIO_DIR_INPUT, DIO_INPUT_PULL_DOWN},  /* PIN 1 */ 
+    {DIO_DIR_OUTPUT, DIO_INPUT_PULL_DOWN},  /* PIN 2 */ 
+    {DIO_DIR_OUTPUT, DIO_INPUT_PULL_DOWN},  /* PIN 3 */ 
+    {DIO_DIR_OUTPUT, DIO_INPUT_PULL_DOWN},  /* PIN 4 */ 
+    {DIO_DIR_OUTPUT, DIO_INPUT_PULL_DOWN},  /* PIN 5 */ 
+    {DIO_DIR_OUTPUT, DIO_INPUT_PULL_DOWN},  /* PIN 6 */ 
+    {DIO_DIR_OUTPUT, DIO_INPUT_PULL_DOWN},  /* PIN 7 */ 
+
+    {DIO_DIR_OUTPUT, DIO_INPUT_PULL_UP},  /* PIN 8 */
+    {DIO_DIR_OUTPUT, DIO_INPUT_PULL_UP},  /* PIN 9 */
+    {DIO_DIR_OUTPUT, DIO_INPUT_PULL_DOWN},  /* PIN 10 */ 
+    {DIO_DIR_OUTPUT, DIO_INPUT_PULL_DOWN},  /* PIN 11 */ 
+    {DIO_DIR_OUTPUT, DIO_INPUT_PULL_DOWN},  /* PIN 12 */ 
+    {DIO_DIR_OUTPUT, DIO_INPUT_PULL_DOWN},  /* PIN 13 */ 
+    {DIO_DIR_OUTPUT, DIO_INPUT_PULL_DOWN},  /* PIN 14 */ 
+    {DIO_DIR_OUTPUT, DIO_INPUT_PULL_DOWN},  /* PIN 15 */
+
+    {DIO_DIR_OUTPUT, DIO_INPUT_PULL_DOWN},  /* PIN 16 */ 
+    {DIO_DIR_OUTPUT, DIO_INPUT_PULL_DOWN},  /* PIN 17 */ 
+    {DIO_DIR_OUTPUT, DIO_INPUT_PULL_DOWN},  /* PIN 18 */ 
+    {DIO_DIR_OUTPUT, DIO_INPUT_PULL_DOWN},  /* PIN 19 */ 
+    {DIO_DIR_OUTPUT, DIO_INPUT_PULL_DOWN},  /* PIN 20 */ 
+    {DIO_DIR_OUTPUT, DIO_INPUT_PULL_DOWN},  /* PIN 21 */ 
+    {DIO_DIR_OUTPUT, DIO_INPUT_PULL_DOWN},  /* PIN 22 */ 
+    {DIO_DIR_OUTPUT, DIO_INPUT_PULL_DOWN},  /* PIN 23 */ 
+
+
+    {DIO_DIR_OUTPUT, DIO_INPUT_PULL_DOWN},  /* PIN 24 */ 
+    {DIO_DIR_OUTPUT, DIO_INPUT_PULL_DOWN},  /* PIN 25 */ 
+    {DIO_DIR_OUTPUT, DIO_INPUT_PULL_DOWN},  /* PIN 26 */ 
+    {DIO_DIR_OUTPUT, DIO_INPUT_PULL_DOWN},  /* PIN 27 */ 
+    {DIO_DIR_OUTPUT, DIO_INPUT_PULL_DOWN},  /* PIN 28 */ 
+    {DIO_DIR_OUTPUT, DIO_INPUT_PULL_DOWN},  /* PIN 29 */ 
+    {DIO_DIR_OUTPUT, DIO_INPUT_PULL_DOWN},  /* PIN 30 */ 
+    {DIO_DIR_OUTPUT, DIO_INPUT_PULL_DOWN}   /* PIN 31 */
+
+} ;
+
+#endif /*DIO_CFG_H*/
